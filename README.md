@@ -28,8 +28,7 @@ C:\Users\User> ollama run gemma3:270m
 >>>
 ```
 
-![Gemma 3 running in CMD](<img width="1523" height="957" alt="image" src="https://github.com/user-attachments/assets/b6780c4a-ebb9-4492-b605-ef5aad83bf07" />
-)
+![Gemma 3 running in CMD](assets/gemma3.png)
 
 ---
 
@@ -49,8 +48,8 @@ C:\Users\User> ollama run phi3
 >>>
 ```
 
-![Phi-3 running in CMD](<img width="1918" height="1021" alt="image" src="https://github.com/user-attachments/assets/f7d60985-d326-479e-bdbb-81f0b2701ec4" />
-)
+![Phi-3 running in CMD](assets/phi3.png)
+
 
 ---
 
@@ -62,5 +61,4 @@ Run:
 ollama list
 ```
 
-![Installed Ollama models](<img width="610" height="171" alt="image" src="https://github.com/user-attachments/assets/1c389048-31ac-4524-b492-fa4a5e67847f" />
-)
+![Installed Ollama models](assets/commands.png)
