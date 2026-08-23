@@ -46,7 +46,8 @@ Example:
 ```text
 C:\Users\User> ollama run phi3
 
-![Phi-3 running in CMD](<img width="1918" height="1021" alt="image" src="https://github.com/user-attachments/assets/fa7a0f12-2a91-4bf1-8880-02d610aec757" />)
+![Phi-3 running in CMD](<img width="1918" height="1021" alt="image" src="https://github.com/user-attachments/assets/1cf8ff42-70f7-4ef9-8f85-3204f3cf610e" />
+)
 
 ---
 
