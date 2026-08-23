@@ -28,7 +28,8 @@ C:\Users\User> ollama run gemma3:270m
 >
 ```
 
-![Gemma 3 running in CMD](<img width="1523" height="957" alt="image" src="https://github.com/user-attachments/assets/1d6b30cc-bba4-4293-b657-bd059f64f0ef" />)
+![Gemma 3 running in CMD] (<img width="1523" height="957" alt="image" src="https://github.com/user-attachments/assets/3d236e85-dc04-486f-b0dd-32a3e9b9b635" />
+)
 
 ---
 
@@ -45,7 +46,7 @@ Example:
 ```text
 C:\Users\User> ollama run phi3
 
-![Phi-3 running in CMD](<img width="1918" height="1021" alt="image" src="https://github.com/user-attachments/assets/92965a01-6740-454c-b19c-8a19de412a54" />)
+![Phi-3 running in CMD](<img width="1918" height="1021" alt="image" src="https://github.com/user-attachments/assets/fa7a0f12-2a91-4bf1-8880-02d610aec757" />)
 
 ---
 
