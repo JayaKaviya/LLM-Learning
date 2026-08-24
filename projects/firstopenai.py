@@ -41,4 +41,4 @@ print(response.choices[0].message.content)
 # Let's try out this utility
 
 ed = fetch_website_contents("https://aivorajk.vercel.app")
-print(ed) 
+print(ed)
