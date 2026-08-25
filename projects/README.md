@@ -35,7 +35,7 @@ project/
 Install the required Gemini Python package:
 
 ```bash
-pip install google-genai
+pip install openai
 ```
 
 Run the program:
