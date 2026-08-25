@@ -90,4 +90,38 @@ def summarize(url):
     )
     return response.choices[0].message.content 
 
-print(summarize("https://www.geeksforgeeks.org/python/python-oops-concepts")) 
+print(summarize("https://www.geeksforgeeks.org/python/python-oops-concepts"))  
+
+#FUN Task 
+
+# Step 1: Create your prompts
+
+system_prompt = """
+You are a hilariously snarky email-summary assistant. Summarize the email briefly in markdown, focusing only on the important announcement and key details. Add a little playful humor, but keep the summary clear and professional enough to understand. Do not invent facts.
+"""
+
+user_prompt = """
+    Dear JayaKaviya,
+
+Congratulations! 🎉 We are delighted to share that you have been selected by Apple for the Software Development Engineer (SDE) position.
+
+This is a fantastic achievement and a well-deserved recognition of your skills and hard work. Looks like Apple decided they needed some extra coding power! 🍎💻
+
+Wishing you great success in your new role at Apple. May your code compile on the first try and your bugs be few!
+
+Best wishes,
+Congratulations once again!
+
+"""
+
+# Step 2: Make the messages list
+
+messages = [
+    { "role":"system", "content" : system_prompt },
+    { "role":"user", "content" : user_prompt }
+    ] 
+
+# Step 3: Call OpenAI
+response = openai.chat.completions.create(model="gemini-3.5-flash-lite", messages=messages)
+# Step 4: print the result
+print(response.choices[0].message.content)

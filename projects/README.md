@@ -1,0 +1,59 @@
+# 📧 Email Summarizer
+
+A simple Python project that uses an AI model to summarize email content.
+
+## 📌 Overview
+
+This project takes an email as input and generates a short, easy-to-understand summary.
+
+The example email announces that **JayaKaviya Deivasigamani has been selected by Apple for the Software Development Engineer (SDE) position**.
+
+## 📂 Project Structure
+
+```text
+project/
+│
+├── geminiai.py
+└── README.md
+```
+
+## 🛠️ Technologies Used
+
+* Python
+* Gemini AI
+* AI-powered email summarization
+
+## 🚀 How It Works
+
+1. The email content is provided to `geminiai.py`.
+2. The program sends the email content to the Gemini AI model.
+3. Gemini analyzes the email.
+4. A short summary is generated and displayed in the terminal.
+
+## ▶️ How to Run
+
+Install the required Gemini Python package:
+
+```bash
+pip install google-genai
+```
+
+Run the program:
+
+```bash
+python geminiai.py
+```
+
+## 🎯 Example
+
+**Input:**
+
+An email announcing that JayaKaviya Deivasigamani has been selected by Apple for the Software Development Engineer position.
+
+**Output:**
+
+> JayaKaviya Deivasigamani has been selected by Apple as a Software Development Engineer at Apple. 🎉🍎
+
+## 👩‍💻 Purpose
+
+This project demonstrates how Gemini AI can be used with Python to quickly extract the important information from an email and generate a concise summary.
