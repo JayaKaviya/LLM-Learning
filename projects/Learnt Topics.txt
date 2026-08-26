@@ -1,0 +1,62 @@
+-------------------------------------------------- DAY 1 ----------------------------------------------------------
+
+
+1. Ollama
+Ollama lets us run AI models on our own computer.
+It works locally.
+Example models: Llama, Qwen, Gemma.
+
+Remember:
+👉 Ollama = Run AI locally
+
+2. OpenAI
+OpenAI provides powerful AI models like GPT.
+We can use them through the OpenAI API.
+Our application sends a request → OpenAI processes it → we get a response.
+
+Remember:
+👉 OpenAI API = Use AI through code
+
+3. System Prompt
+Tells the AI how to behave.
+It contains rules or instructions.
+
+Example:
+
+"You are a helpful teacher."
+
+Remember:
+👉 System = How AI should behave
+
+4. User Prompt
+Tells the AI what the user wants.
+
+Example:
+
+"Explain Python loops."
+
+Remember:
+👉 User = What AI should do
+
+5. Summarization
+Summarization means making long information short.
+We keep only the important points.
+
+Examples:
+
+Shorten an email
+Summarize a meeting
+Summarize a document
+
+Remember:
+👉 Summarization = Long → Short + Important information 
+
+
+
+-------------------------------------------------- DAY 2 ---------------------------------------------------------- 
+
+6.FRONTIER MODELS - refers to the model from the big company, that is private - we have to pay to use it  
+    Example: 1.GPT model from Chatgpt -> OpenAI
+             2. Claude -> Anthropic , small version -> haiku model, middle version -> sonnet, bigger version -> opus
+             3. Gemini from Google  (before one Bard fro gogole not that much, then gemini latest models gemini3.5, gemma , etc) 
+             4. Grok from x.ai (Elon musk)
