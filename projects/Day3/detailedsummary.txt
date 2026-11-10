@@ -1,0 +1,232 @@
+NOTES: 3 FLAVOURS OF LARGE LANGUAGE MODELS (LLMs)
+
+An LLM (Large Language Model) is an AI model trained on large amounts of text to understand and generate human language.
+
+LLMs can be broadly classified into three categories based on their training and behaviour:
+
+1. Base Model – Predict the next token.
+2. Chat / Instruct Model – Follow user instructions.
+3. Reasoning Model – Solve complex, multi-step problems.
+
+
+==================================================
+1. BASE MODEL – PREDICT THE NEXT TOKEN
+==================================================
+
+• A base model is a pretrained language model.
+• Its primary objective is to predict the next token based on previous tokens.
+• A token can be a complete word, part of a word, or punctuation.
+• It learns language patterns from large amounts of training data.
+
+Example:
+
+Input:
+I love eating
+
+Possible prediction:
+I love eating pizza.
+
+Historical example:
+GPT-3 (2020) was a pretrained base language model released before ChatGPT (2022).
+
+Training example:
+
+Q: What is Python?
+A: Python is a programming language.
+
+Q: What is Java?
+A:
+
+The model learns to continue the text based on patterns in its training data. It is not necessarily trained to behave like a helpful conversational assistant.
+
+Why use it?
+• As a foundation for building specialized models.
+• For further training on specific tasks.
+• For developing domain-specific applications.
+
+
+==================================================
+2. CHAT / INSTRUCT MODEL – FOLLOW INSTRUCTIONS
+==================================================
+
+• A chat or instruct model is trained to understand and follow user instructions.
+• It is developed by further training a pretrained base model.
+• It learns to generate helpful responses in a conversational format.
+
+Example:
+
+User: Explain Python.
+
+Assistant: Python is a programming language used to build websites, applications, and AI systems.
+
+IMPORTANT TRAINING TECHNIQUES
+
+A. Supervised Fine-Tuning (SFT)
+
+• Trains the model using example instructions and their expected responses.
+• Teaches the model how to answer questions and follow instructions.
+
+B. Reinforcement Learning from Human Feedback (RLHF)
+
+• Human evaluators compare different AI-generated responses.
+• They identify which responses are better.
+• The model is optimized to generate responses that align more closely with human preferences.
+
+CHAT MESSAGE STRUCTURE
+
+Chat applications commonly use three roles:
+
+System     – Defines the AI's behaviour and instructions.
+User       – Contains the user's question or request.
+Assistant  – Contains the AI's response.
+
+Example:
+
+messages = [
+    {"role": "system", "content": "You are a Python teacher."},
+    {"role": "user", "content": "Explain loops."}
+]
+
+Why use it?
+• Email writing
+• Content generation
+• Summarization
+• Chatbots
+• Question answering
+
+
+==================================================
+3. REASONING / THINKING MODEL – SOLVE COMPLEX PROBLEMS
+==================================================
+
+• Reasoning models are designed to solve complex, multi-step problems.
+• They can use additional computation before producing the final answer.
+• They can break problems into smaller steps, examine possibilities, and check solutions.
+
+Example:
+
+A person has 3 boxes.
+Each box has 5 bags.
+Each bag has 4 chocolates.
+They give away 17 chocolates.
+
+How many chocolates remain?
+
+Solution:
+
+Step 1: One box = 5 × 4 = 20 chocolates.
+Step 2: Three boxes = 3 × 20 = 60 chocolates.
+Step 3: Remaining = 60 − 17 = 43 chocolates.
+
+Answer: 43 chocolates.
+
+A. CHAIN-OF-THOUGHT (CoT) PROMPTING
+
+• A prompt engineering technique that encourages a model to approach a problem step by step.
+• It can help the model organize its problem-solving process.
+
+Example:
+
+Solve this problem.
+Work through the steps carefully.
+Check your answer.
+
+Note: CoT prompting does not automatically turn a standard chat model into a specially trained reasoning model.
+
+B. REASONING BUDGET / REASONING EFFORT
+
+The amount of computation allocated to solving a problem.
+
+Low effort    – Less computation, generally faster responses.
+Medium effort – Moderate computation.
+High effort   – More extensive computation for difficult problems.
+
+Higher reasoning effort can improve performance on difficult tasks, but it may also increase response time and computational cost.
+
+C. BUDGET FORCING
+
+• A technique used during inference to encourage a reasoning model to continue reasoning or use additional computation.
+• It can encourage the model to reconsider possibilities and perform further checks.
+• The goal is to improve the quality of the final answer.
+
+Why use reasoning models?
+• Complex coding problems
+• Mathematical problems
+• Logical puzzles
+• Algorithm design
+• Multi-step analysis
+
+
+==================================================
+4. HYBRID MODELS
+==================================================
+
+A hybrid model can support different levels of reasoning depending on the complexity of the task.
+
+Examples:
+
+• Simple question → Lower reasoning effort.
+• Difficult mathematical problem → Higher reasoning effort.
+• Complex coding problem → More computation.
+
+Examples of models with reasoning capabilities and configurable reasoning effort:
+
+• GPT-5
+• Gemini 2.5 Pro
+
+The model can balance response speed, computational cost, and problem-solving ability based on its available reasoning controls.
+
+
+==================================================
+5. FINAL COMPARISON
+==================================================
+
+BASE MODEL
+Main purpose : Predict the next token.
+Training     : Pretraining.
+Behaviour    : Text continuation.
+Example      : GPT-3 (base).
+
+CHAT / INSTRUCT MODEL
+Main purpose : Follow instructions.
+Training     : Instruction tuning and alignment.
+Behaviour    : Conversational responses.
+Example      : Instruction-tuned GPT.
+
+REASONING MODEL
+Main purpose : Solve complex problems.
+Training     : Reasoning-oriented training and post-training.
+Behaviour    : Multi-step problem-solving.
+Example      : GPT-5 reasoning.
+
+Easy way to remember:
+
+Base      = Predict
+Chat      = Respond
+Reasoning = Solve
+Hybrid    = Adapt
+
+Important technical note:
+These categories are not mutually exclusive. A reasoning model can also be instruction-tuned and work as a conversational assistant.
+
+
+==================================================
+6. IMPORTANT TERMS – QUICK REVISION
+==================================================
+
+LLM                – Large Language Model.
+Token              – A unit of text processed by a model.
+Pretraining        – Initial training on large amounts of data.
+Fine-tuning        – Further training for particular tasks or behaviours.
+SFT                – Training with example inputs and expected outputs.
+RLHF               – Improving model behaviour using human feedback.
+Prompt Engineering – Designing effective prompts.
+CoT                – Encouraging step-by-step problem-solving.
+Reasoning Budget   – Computation allocated for reasoning.
+Budget Forcing     – Encouraging additional reasoning computation.
+Hybrid Model       – A model supporting different reasoning levels.
+
+
+ONE-LINE ANSWER:
+
+LLMs can be broadly understood as base models that predict the next token, chat or instruction models that follow user instructions, and reasoning models that use additional computation to solve complex, multi-step problems.

@@ -1,0 +1,29 @@
+LLM COMES IN 3 FLAVORS
+
+1.Base model 
+
+  - Predicts the next sequence 
+  - Example: In mobile - when you type "hello", get/ predict the next sequence after "hello hai" 
+  - Before Chatgpt INTRODUCED IN 2022, the previous model GPT 3 is the "base model". It also used the q:question , a:answers train then - we can give ques & answer in this way. 
+  - Used when training a model to do something different , to give it a new skill
+
+2. Chat / Instruct variant  ( also a hybrid model - decide how much thinking to do a task )
+   
+   - OpenAi then changed it to one message then its response - trained to work in prompt style.
+   - Then, One info called chat - system prompt,user prompt. This approach used Reinforcement Learning from Human Feedback (RLHF). 
+   - This formed the normal GPT to Chat GPT
+   - fast bcoz of no reasoning, cheaper
+   - Used for Content generation - write email
+
+3.Reasoning / Thinking model (also a hybrid model)
+
+   - Trick - Prompt engineerning Ex:ask model to do something then adding at last: check step by step (prompt)..it works 
+   - Train the model to first output the thinking step and  give the answer 
+   - Example : OpenAi OSS model thinking things before giving its reply  
+   - Reasoning Budget/Effort : Amount of reasoning a model does
+   - Budget Forcing : when you make a reasoning model, think longer,you need to make it more reasoning.. ie, reason a bit deeper 
+( add "weight" to the thinking tract - then the model will do , wait I should rethink this, am I sure ? let me reconsider) 
+   - Reasoning model with high Reasoning Budget PERFORM BETTER in all diff benchmarks..
+   - Used for proble solving, better at puzzles | Highly intelligent
+
+Hybrid Models Examples - Gemini Pro 25, GPT 5
