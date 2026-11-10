@@ -40,6 +40,10 @@ else:
 
 # -------------------------------------------------------------------
 # 3. Native Gemini REST API Call
+
+# APPROACH 1: RAW REST API
+# Python requests -> Google Gemini API -> Gemini Response
+
 # -------------------------------------------------------------------
 # Gemini uses Content-Type header only (key is passed in URL)
 headers = {
@@ -78,6 +82,9 @@ print(response.json()["candidates"][0]["content"]["parts"][0]["text"])
 #------------------------------------------------------------------------------------------------------------------------------
 
 # 1.USING Open ai - You have an existing app built for OpenAI and want to swap models to Gemini with minimal code changes.
+# APPROACH 2: OPENAI-COMPATIBLE GEMINI
+# OpenAI SDK -> Google's Gemini Endpoint -> Gemini Response
+
 
 from openai import OpenAI
 
@@ -96,6 +103,8 @@ print(response.choices[0].message.content)
 
 
 # 2.Google Gen AI SDK Approach (Recommended)  - for Gemini alone
+# APPROACH 3: OFFICIAL GEMINI SDK
+# Google Gen AI SDK -> Google Gemini API -> Gemini Response
 
 import os
 from dotenv import load_dotenv
@@ -119,7 +128,8 @@ print("FUN FACT : ", response.text)
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------- 
-
+# APPROACH 4: OLLAMA
+# Python + OpenAI SDK -> Local Ollama Server -> Llama / DeepSeek Response
 
 import ollama
 
