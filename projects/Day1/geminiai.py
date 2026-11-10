@@ -1,3 +1,11 @@
+# Connect Python to Google's Gemini models using the OpenAI-compatible API.
+# Load and validate the Gemini API key from the .env file.
+# Send messages to Gemini and retrieve AI-generated responses.
+# Scrape website content using BeautifulSoup and requests.
+# Use system and user prompts to control AI behaviour and summarize website content.
+# Create a reusable summarize() function to automate website summarization.
+# Finally, demonstrate prompt engineering by using Gemini to summarize an email.
+
 import os
 from dotenv import load_dotenv
 from scraper import fetch_website_contents

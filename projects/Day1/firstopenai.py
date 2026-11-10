@@ -1,3 +1,7 @@
+# Connect Python to OpenAI using an API key stored in the .env file.
+# Validate the API key, send a user prompt to GPT-5 Nano,
+# retrieve the AI-generated response, and scrape content from a given website.
+
 import os
 from dotenv import load_dotenv
 # from scraper import fetch_website_contents
@@ -31,6 +35,7 @@ else:
 message = "Hello, GPT! This is my first ever message to you! Hi!"
 messages = [{"role": "user", "content": message}]
 openai = OpenAI()
+# openai = OpenAI(api_key=api_key) (both works )
 response = openai.chat.completions.create(
     model="gpt-5-nano",
     messages=messages
@@ -38,7 +43,7 @@ response = openai.chat.completions.create(
 print(response.choices[0].message.content)
  
  
-# Let's try out this utility
+# Let's try out this utility - 
 
 ed = fetch_website_contents("https://aivorajk.vercel.app")
 print(ed)

@@ -1,3 +1,7 @@
+# Fetch a website's HTML content using an HTTP GET request.
+# Parse the HTML, remove unnecessary elements, extract readable text,
+# and return the website title and content limited to 2,000 characters.
+
 from bs4 import BeautifulSoup
 import requests
 

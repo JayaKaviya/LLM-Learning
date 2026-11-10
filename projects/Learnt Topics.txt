@@ -58,5 +58,5 @@ Remember:
 6.FRONTIER MODELS - refers to the model from the big company, that is private - we have to pay to use it  
     Example: 1.GPT model from Chatgpt -> OpenAI
              2. Claude -> Anthropic , small version -> haiku model, middle version -> sonnet, bigger version -> opus
-             3. Gemini from Google  (before one Bard fro gogole not that much, then gemini latest models gemini3.5, gemma , etc) 
+             3. Gemini from Google  (before one Bard from google not that much, then gemini latest models gemini3.5, gemma , etc) 
              4. Grok from x.ai (Elon musk)
