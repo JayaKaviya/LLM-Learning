@@ -1,0 +1,44 @@
+WEEK 1 – DAY 4: INTRODUCTION TO TRANSFORMERS
+
+1. GPT
+   GPT stands for Generative Pre-trained Transformer.
+
+- Generative: Generates and predicts the next token.
+- Pre-trained: Trained on large amounts of data.
+- Transformer: The neural network architecture used by GPT.
+
+2. Neural Networks
+
+- Inspired loosely by the human brain.
+- Consist of connected artificial neurons.
+- Learn patterns from training data to make predictions.
+- Deep learning uses multiple layers of connected neurons.
+
+3. Transformer Architecture
+
+- Introduced by Google researchers in 2017.
+- Based on the research paper "Attention Is All You Need".
+- Uses self-attention to identify important parts of an input sequence.
+- Helps train larger models and process more data efficiently.
+
+4. Evolution of GPT
+
+- GPT-1: 2018
+- GPT-2: 2019
+- GPT-3: 2020
+- ChatGPT (GPT-3.5): 2022
+- GPT-4: 2023
+- GPT- 4o : 2024
+
+5. Self-Attention
+   Helps a model identify which parts of an input sequence are important when processing information.
+
+6. Transformer Alternatives
+
+- State Space Models (SSMs)
+- Hybrid Architectures
+
+Transformers remain the predominant architecture for LLMs.
+
+KEY TAKEAWAY
+Transformers made it possible to train and scale large language models more efficiently, reducing training time and costs.
