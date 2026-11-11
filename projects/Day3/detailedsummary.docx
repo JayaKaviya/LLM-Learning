@@ -229,4 +229,95 @@ Hybrid Model       – A model supporting different reasoning levels.
 
 ONE-LINE ANSWER:
 
-LLMs can be broadly understood as base models that predict the next token, chat or instruction models that follow user instructions, and reasoning models that use additional computation to solve complex, multi-step problems.
+LLMs can be broadly understood as base models that predict the next token, chat or instruction models that follow user instructions, and reasoning models that use additional computation to solve complex, multi-step problems. 
+
+
+====================================================================================================
+
+FRONTIER MODELS, AI LABS AND CHAT PRODUCTS
+
+1. FOUNDATION MODELS VS FRONTIER MODELS
+
+--Foundation Model--
+A pretrained AI model used as a building block for developing other AI applications.
+
+--Frontier Model--
+An advanced AI model that pushes the boundaries of current AI capabilities.
+
+Note: These terms are sometimes used interchangeably, but they are not exactly the same.
+
+
+2. MAJOR AI LABS AND THEIR MODELS
+
+AI LAB          MODEL FAMILY              CHAT PRODUCT
+
+OpenAI          GPT, O-series, GPT-OSS     ChatGPT
+Anthropic       Claude                     Claude
+Google          Gemini                     Gemini
+xAI             Grok                       Grok
+DeepSeek        DeepSeek                   DeepSeek
+
+Claude model sizes:
+• Haiku – Smaller and faster.
+• Sonnet – Balanced performance and speed.
+• Opus – Designed for complex tasks.
+
+
+3. OPEN-WEIGHT MODELS
+
+• Allow developers to download and run model weights on their own infrastructure.
+• Examples: DeepSeek models and OpenAI GPT-OSS.
+• Open-weight does not necessarily mean fully open-source.
+
+
+FRONTIER MODELS – STRENGTHS AND LIMITATIONS
+
+1. STRENGTHS OF FRONTIER MODELS
+
+    A. Information Synthesis
+    • Combine information from multiple sources.
+    • Summarize web pages and provide structured answers.
+    • Compare options by explaining their pros and cons.
+
+    B. Content Generation
+    • Draft emails and presentations.
+    • Generate project plans and ideas.
+    • Help brainstorm and develop new initiatives.
+
+    C. Coding
+    • Generate and explain code.
+    • Debug errors and suggest solutions.
+    • Iteratively write, test, and improve code.
+    • Help developers solve problems faster.
+
+2. LIMITATIONS OF FRONTIER MODELS
+
+    A. Knowledge Gaps and Knowledge Cutoff
+    • Models may have gaps in their training knowledge.
+    • They may not know about recent technologies, APIs, or model versions.
+    • Their knowledge may become outdated after training.
+
+    B. Hallucinations
+    • Models can generate incorrect information confidently.
+    • They predict likely next tokens rather than directly verifying every fact.
+    • Plausible answers are not always correct.
+
+    C. Coding Mistakes
+    • Models may misunderstand the root cause of an error.
+    • They may generate unnecessary or overly complicated code.
+    • They may fix symptoms instead of addressing the actual problem.
+
+3. WHY HUMAN SUPERVISION IS IMPORTANT
+
+    • LLMs are useful assistants, but they can make mistakes.
+    • Beginners may find it difficult to identify incorrect AI-generated solutions.
+    • Experienced developers can review, test, and correct generated code.
+
+Think of an LLM as a junior analyst:
+It can perform tasks quickly, but a human must review its work, verify accuracy, and keep it on track.  
+
+
+====================================================================================================
+
+
+
