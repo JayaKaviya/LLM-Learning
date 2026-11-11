@@ -319,5 +319,31 @@ It can perform tasks quickly, but a human must review its work, verify accuracy,
 
 ====================================================================================================
 
+Testing UI 
+
+1.ChatGPT 5
+2.Claude - Sonnet 4.5, opus 4.1
+3. Gemini - Gemini 2.5 pro 
+4.grok - Grok 4 fast 
+5.DeepSeek - DeepSeek 
 
 
+==================================================================================================== 
+
+Running Claude in Vs code Terminal
+
+node -v
+npm -v 
+npm install -g @anthropic-ai/claude-code 
+irm https://claude.ai/install.ps1 | iex 
+set path in env : C:\Users\kavya\.local\bin  
+
+Need Claude pro/subscription acnt to get run in terminal(where as the free one doesn't get run here in terminal) 
+
+Task done in Vs code terminal Claude : 
+
+Please read, the Day1 and Day2 folder in the week one directory.And then write a solution to the challenge in Day2 as a python module called  solution.py in week1 that I can run with UV.
+Created solution.py file with the code for Summarization of the website 
+Running that file & checking the summarization of the website
+
+====================================================================================================
